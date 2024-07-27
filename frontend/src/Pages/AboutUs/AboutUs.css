@@ -1,0 +1,48 @@
+.about-us{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    background-color: #F2F2F2;
+}
+
+.about-us img{
+    width: 220px;
+    height: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.about-us-in{
+    width: 40%;
+    text-align: center;
+    font-weight: 500;
+    animation: fadeInUp 1.5s forwards;
+}
+
+.about-us-in h3{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.5s forwards 0.5s;
+}
+
+.about-us-in p{
+    font-size: 15px;
+    line-height: 26px;
+    animation: fadeInUp 1.5s forwards 1s;
+}
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(80px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

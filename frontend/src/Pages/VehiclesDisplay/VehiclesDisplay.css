@@ -1,0 +1,35 @@
+.vehicles-display {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none; 
+}
+
+.vehicles-display::-webkit-scrollbar {
+    display: none; 
+}
+
+.vehicles-display img {
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0; 
+    margin-right: 20px; 
+    animation-name: scroll;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}

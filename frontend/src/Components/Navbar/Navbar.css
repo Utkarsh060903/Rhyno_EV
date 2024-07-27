@@ -1,0 +1,71 @@
+html {
+  scroll-behavior: smooth;
+}
+.navbar {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  font-family: "Outfit";
+  background-color: transparent;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  text-decoration: none;
+}
+
+.navbar .logo img {
+  padding-bottom: 10px;
+  width: 250px;
+  height: 150px;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  color: black;
+  font-size: 18px;
+  justify-content: center;
+  margin-right: 150px;
+  position: relative;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.navbar-menu a {
+  padding-bottom: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-menu a:hover {
+  cursor: pointer;
+  color: #424242;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+}

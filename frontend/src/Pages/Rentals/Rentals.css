@@ -1,0 +1,53 @@
+.rentals{
+    height: 120vh;
+    width: 100%;
+    background-color: #FAFAFA;
+    padding: 50px 0;
+}
+
+.main-content{
+    width: 40%;
+    text-align: center;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    margin-left: 400px;
+}
+
+.main-content h3{
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.main-content p{
+    font-size: 15px;
+    line-height: 26px;
+}
+
+.app-download{
+    margin: auto auto;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: max(3vw,20px);
+    text-align: center;
+    font-weight: 500;
+}
+
+.app-download-platforms{
+    display: flex;
+    justify-content: center;
+    gap: max(2vw,10px);
+    margin-top: 40px;
+}
+
+.app-download-platforms img{
+    width: max(30vw,120px);
+    max-width: 180px;
+    transform: 0.5s;
+    cursor: pointer;
+}
+
+.app-download-platforms img:hover{
+    transform: scale(1.05);
+}
