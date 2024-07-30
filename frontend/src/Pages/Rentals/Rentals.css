@@ -1,8 +1,9 @@
 .rentals{
-    height: 120vh;
+    height: 100vh;
     width: 100%;
     background-color: #FAFAFA;
     padding: 50px 0;
+    padding-right: 40px;
 }
 
 .main-content{
@@ -11,7 +12,7 @@
     font-weight: 500;
     align-items: center;
     justify-content: center;
-    margin-left: 400px;
+    margin-left: 480px;
 }
 
 .main-content h3{
@@ -50,4 +51,36 @@
 
 .app-download-platforms img:hover{
     transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 50px; 
+        padding-right: 40px;
+    }
+
+    .main-content h3 {
+        font-size: 24px;
+    }
+
+    .main-content p {
+        font-size: 14px;
+        line-height: 3vh;
+    }
+
+    .app-download {
+        font-size: max(4vw, 20px);
+        padding-right: 120px;
+    }
+
+    .app-download-platforms {
+        gap: max(4vw, 10px);
+    }
+
+    .app-download-platforms img {
+        width: max(30vw, 120px);
+        max-width: 30vw;
+    }
 }

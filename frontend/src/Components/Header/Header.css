@@ -1,67 +1,67 @@
 .header {
-    height: 100vh;
-    width: 100%;
-    background-color: #2C2A2A;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    z-index: -1;
-    margin-top: 100px;
+  height: 100vh;
+  width: 100%;
+  background-color: #2C2A2A;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: -1;
+  margin-top: 13vh; 
 }
 
 .header h1 {
-    font-size: 80px;
-    font-weight: 900;
-    color: #ffffff;
-    position: relative;
-    padding-left: 50px;
-    margin-top: -50px;
-    animation: slideIn 1.5s forwards;
+  font-size: 6vw; 
+  font-weight: 900;
+  color: #ffffff;
+  position: relative;
+  padding-left: 5vw; 
+  margin-top: -5vh; 
+  animation: slideIn 1.5s forwards;
 }
 
 .header h1::before {
-    content: "Let's Elevate Your Ride Experience With Rhyno – Where Superiority Meets ";
-    position: absolute;
-    color: black;
-    top: -2px;
-    left: 2px;
-    padding-left: 50px;
-    -webkit-text-stroke: 1px #F9ED32;
-    z-index: -1;
+  content: "Let's Elevate Your Ride Experience With Rhyno – Where Superiority Meets ";
+  position: absolute;
+  color: black;
+  top: -0.2vh; 
+  left: 0.2vw; 
+  padding-left: 5vw; 
+  -webkit-text-stroke: 0.1vw #F9ED32; 
+  z-index: -1;
 }
 
 .animated-word {
-    color: #F9ED32; 
+  color: #F9ED32;
 }
 
 @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(2vh);
   }
-  
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateX(-50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
 
-  @media (max-width: 1200px) {
-    .header h1 {
-        font-size: 60px;
-        margin-left: 30px;
-        margin-top: -30px;
-    }
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-5vw); 
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 1100px) {
+  .header h1 {
+      font-size: 7vh; 
+ 
+      margin-top: -3vh; 
+  }
 }

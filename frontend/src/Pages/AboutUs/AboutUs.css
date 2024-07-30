@@ -1,4 +1,4 @@
-.about-us{
+.about-us {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -7,30 +7,32 @@
     justify-content: space-around;
     position: relative;
     background-color: #F2F2F2;
+    flex-wrap: wrap;
 }
 
-.about-us img{
+.about-us img {
     width: 220px;
     height: 220px;
     border-radius: 20px;
     object-fit: cover;
+    margin-bottom: 20px;
 }
 
-.about-us-in{
+.about-us-in {
     width: 40%;
     text-align: center;
     font-weight: 500;
     animation: fadeInUp 1.5s forwards;
 }
 
-.about-us-in h3{
+.about-us-in h3 {
     font-size: 30px;
     font-weight: 800;
     margin-bottom: 30px;
     animation: fadeInUp 1.5s forwards 0.5s;
 }
 
-.about-us-in p{
+.about-us-in p {
     font-size: 15px;
     line-height: 26px;
     animation: fadeInUp 1.5s forwards 1s;
@@ -45,4 +47,52 @@
       opacity: 1;
       transform: translateY(0);
     }
-  }
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .about-us {
+        padding: 0 30px;
+    }
+
+    .about-us-in {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-us {
+        padding: 0 20px;
+    }
+
+    .about-us-in {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        padding-right: 40px;
+    }
+
+    .about-us img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .about-us-in {
+        width: 100%;
+    }
+
+    .about-us-in h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .about-us-in p {
+        font-size: 14px;
+    }
+}

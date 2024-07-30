@@ -1,28 +1,25 @@
- 
- 
- .texts{
+.texts {
     background-color: #EDEDED;
     text-align: center;
     font-weight: 800;
     font-size: 30px;
     padding-top: 30px;
- }
- 
- .products{
-    height: 100vh;
-    width: 100%;
-     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 90px;
-    background-color: #EDEDED;
-    /* background: transparent; */
 }
 
-.product{
-    height: 80%;
+.products {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw; /* Adjusted to use relative units */
+    background-color: #EDEDED;
+    flex-wrap: wrap;
+}
+
+.product {
+    height: 80%; 
     width: 24%;
-     /* background-color: #414141;  */
     border-radius: 10px;
     background-size: cover;
     background-position: center;
@@ -38,9 +35,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 
-#product1{
+#product1 {
     background-image: url("../../assets/blue_bike.png");
 }
 
@@ -49,33 +46,86 @@
 }
 
 #product3 {
-   background-image: url("../../assets/red_bike.png");
+    background-image: url("../../assets/red_bike.png");
 }
 
-.overlay{
+.overlay {
     width: 100%;
     height: 100%;
     background-color: #F9ED32;
-    padding: 30px;
-    padding-bottom: 80px;
+    padding: 3vh; /* Adjusted to use relative units */
+    padding-bottom: 8vh; /* Adjusted to use relative units */
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-
-.overlay h4{
+.overlay h4 {
     color: #000;
-    font-size: 30px;
+    font-size: 3vh; /* Adjusted to use relative units */
     font-weight: 800;
     white-space: nowrap;
-    margin-bottom: 20px;
+    margin-bottom: 2vh; /* Adjusted to use relative units */
 }
 
-.product:hover .overlay{
+.product:hover .overlay {
     opacity: 1;
     cursor: pointer;
 }
 
-.product:hover{
-    transform: rotate3d(1,1,0,20deg)
-} 
+.product:hover {
+    transform: rotate3d(1, 1, 0, 20deg);
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .products {
+        gap: 4vw;
+    }
+
+    .product {
+        width: 30%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .products {
+        gap: 3vw;
+    }
+
+    .product {
+        width: 45%;
+        height: auto;
+    }
+
+    .overlay h4 {
+        font-size: 2.5vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .texts {
+        font-size: 5vw; /* Adjusted to use relative units */
+    }
+
+    .products {
+        flex-direction: column;
+        height: auto;
+        gap: 2vh;
+    }
+
+    .product {
+        width: 80%;
+        height: auto;
+    }
+
+    .overlay {
+        padding: 2vh;
+        padding-bottom: 4vh;
+    }
+
+    .overlay h4 {
+        font-size: 2vh;
+        margin-bottom: 1vh;
+    }
+}
