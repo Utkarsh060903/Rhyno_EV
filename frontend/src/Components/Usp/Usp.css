@@ -4,14 +4,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3vw; /* Adjusted to use relative units */
-    margin-top: -8vh; /* Adjusted to use relative units */
+    gap: 3vw; 
+    margin-top: -8vh; 
 }
 
 .card {
-    height: 40vh; /* Adjusted to use relative units */
-    width: 40vh; /* Adjusted to use relative units */
-    border-radius: 1vh; /* Adjusted to use relative units */
+    height: 40vh; 
+    width: 40vh; 
+    border-radius: 1vh; 
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -42,29 +42,29 @@
 }
 
 .card img {
-    width: 20vw; /* Adjusted to use relative units */
-    height: 20vw; /* Adjusted to use relative units */
+    width: 20vw; 
+    height: 20vw; 
 }
 
 .overlayy {
     width: 100%;
     height: 100%;
     background-color: #252525;
-    padding: 3vh; /* Adjusted to use relative units */
-    padding-bottom: 8vh; /* Adjusted to use relative units */
+    padding: 3vh; 
+    padding-bottom: 8vh; 
     opacity: 0;
     transition: all ease 0.6s;
     color: #fff;
 }
 
 .card h3 {
-    margin-bottom: 1vh; /* Adjusted to use relative units */
+    margin-bottom: 1vh; 
 }
 
 .card:hover {
     transition: all ease 0.6s;
-    height: 50vh; /* Adjusted to use relative units */
-    width: 50vh; /* Adjusted to use relative units */
+    height: 50vh; 
+    width: 50vh; 
     text-transform: none;
     opacity: 1;
     transform: rotate3d(1, 1, 0, 0);
@@ -72,8 +72,8 @@
 
 .text {
     text-align: center;
-    font-size: 4vh; /* Adjusted to use relative units */
-    margin-top: 4vh; /* Adjusted to use relative units */
+    font-size: 4vh; 
+    margin-top: 4vh; 
     font-weight: 800;
 }
 

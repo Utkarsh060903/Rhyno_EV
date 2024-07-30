@@ -4,6 +4,7 @@
     background-color: #FAFAFA;
     padding: 50px 0;
     padding-right: 40px;
+    padding-top: 100px;
 }
 
 .main-content{
@@ -12,7 +13,7 @@
     font-weight: 500;
     align-items: center;
     justify-content: center;
-    margin-left: 480px;
+    margin-left: 680px;
 }
 
 .main-content h3{
@@ -33,6 +34,8 @@
     font-size: max(3vw,20px);
     text-align: center;
     font-weight: 500;
+    margin-left: 140px;
+    padding-top: 50px;
 }
 
 .app-download-platforms{
