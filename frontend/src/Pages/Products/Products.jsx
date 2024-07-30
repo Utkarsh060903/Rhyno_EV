@@ -16,9 +16,9 @@ const Products = () => {
  window.scrollTo(0, 0);
     gsap.fromTo(
       productRefs.current,
-      { x: 100, opacity: -1 },
+      { y: 100, opacity: -1 },
       {
-        x: 0,
+        y: 0,
         opacity: 1,
         duration: 1,
         ease: 1,

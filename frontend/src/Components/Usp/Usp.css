@@ -1,4 +1,4 @@
-.usp {
+/* .usp {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -90,8 +90,6 @@
         padding-top: 300px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
         gap: 5vh;
     }
 
@@ -115,4 +113,167 @@
         margin-top: 3vh;
     }
 }
+ */
 
+
+
+ .usp {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw; /* Adjusted to use relative units */
+    margin-top: -8vh; /* Adjusted to use relative units */
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 40vh; /* Adjusted to use relative units */
+    width: 40vh; /* Adjusted to use relative units */
+    border-radius: 1vh; /* Adjusted to use relative units */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+    perspective: 1000px;
+    text-decoration: none;
+    color: black;
+}
+
+#card1 {
+    background-image: url("../../assets/lfp-batteries.jpg");
+}
+
+#card2 {
+    background-image: url("../../assets/wider_tyres.jpg");
+}
+
+#card3 {
+    background-image: url("https://blog.evbox.com/hubfs/shutterstock_2115845192-min.jpg");
+}
+
+#card4 {
+    background-image: url("../../assets/experience_ev.jpg");
+}
+
+#card5 {
+    background-image: url("../../assets/simple_ev.jpeg");
+}
+
+.card img {
+    width: 20vw; /* Adjusted to use relative units */
+    height: 20vw; /* Adjusted to use relative units */
+}
+
+.overlayy {
+    width: 100%;
+    height: 100%;
+    background-color: #252525;
+    padding: 3vh; /* Adjusted to use relative units */
+    padding-bottom: 8vh; /* Adjusted to use relative units */
+    opacity: 0;
+    transition: all ease 0.6s;
+    color: #fff;
+}
+
+.card h3 {
+    margin-bottom: 1vh; /* Adjusted to use relative units */
+}
+
+.card:hover {
+    transition: all ease 0.6s;
+    height: 50vh; /* Adjusted to use relative units */
+    width: 50vh; /* Adjusted to use relative units */
+    text-transform: none;
+    opacity: 1;
+    transform: rotate3d(1, 1, 0, 0);
+}
+
+.text {
+    text-align: center;
+    font-size: 4vh; /* Adjusted to use relative units */
+    margin-top: 4vh; /* Adjusted to use relative units */
+    font-weight: 800;
+}
+
+.card:hover .overlayy {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .usp {
+        gap: 4vw;
+    }
+
+    .card {
+        height: 35vh;
+        width: 35vh;
+    }
+
+    .card:hover {
+        height: 45vh;
+        width: 45vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .usp {
+        flex-direction: column;
+        height: auto;
+        gap: 2vh;
+    }
+
+    .card {
+        height: 30vh;
+        width: 30vh;
+    }
+
+    .card:hover {
+        height: 40vh;
+        width: 40vh;
+    }
+
+    .card img {
+        width: 18vw;
+        height: 18vw;
+    }
+
+    .text {
+        font-size: 3vh;
+        margin-top: 3vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .usp {
+        margin-top: 6vh;
+    }
+
+    .card {
+        height: 25vh;
+        width: 25vh;
+    }
+
+    .card:hover {
+        height: 35vh;
+        width: 35vh;
+    }
+
+    .card img {
+        width: 16vw;
+        height: 16vw;
+    }
+
+    .overlayy {
+        padding: 2vh;
+        padding-bottom: 6vh;
+    }
+
+    .text {
+        font-size: 2.5vh;
+        margin-top: 2.5vh;
+    }
+}
